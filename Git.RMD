@@ -1,0 +1,59 @@
+---
+title: "Git"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+install.packages("devtools")
+devtools::install_github("Hui Liu/testgit")
+
+## 什么是 Git?
+
+Git 是一个版本控制系统. <https://gitforwindows.org/> 
+其最初目的是帮助开发人员在大型软件项目上进行合作。 
+Git以高度结构化的方式管理着一系列文件的演变-称之为**repository**版本库。
+就像Word中的修改轨迹功能，但更加严格，强大，并且可以扩展到
+多个文件。 Git 完整命令手册:<http://git-scm.com/docs>
+<https://github.com/mckf111/mckf111.github.io/blob/master/_posts/2018-06-15-%E5%AD%A6R%E5%AD%A6%E5%88%9D%E9%98%B6-03-R%EF%BC%8CGit%E5%92%8CGithub-1.md>
+
+[//]: # cmd
+Git --- The stupid content tracker, 傻瓜内容跟踪器。Linus Torvalds 是这样给我们介绍 Git 的。
+Git 是用于 Linux内核开发的版本控制工具。与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持（wingeddevil注：这得分是用什么样的服务端，使用http协议或者git协议等不太一样。并且在push和pull的时候和服务器端还是有交互的。），使源代码的发布和交流极其方便。 Git 的速度很快，这对于诸如 Linux kernel 这样的大项目来说自然很重要。 Git 最为出色的是它的合并跟踪（merge tracing）能力。
+
+## 什么是 GitHub
+
+Git是在本地使用的软件，用于记录对一组的文件变化。GitHub是一个主服务器，在互联网上为此类项目提供git主页。
+GitHub拥有设计精良的网站，可以通过网页完成Git中的所有功能。
+
+
+https://r-pkgs.org/git.html
+优点：
+
+-有效组织、记录与发布工作任务
+
+-是团队协作具有结构化，是异步工作模式与管理版本的强大工具
+
+-降低项目在网络呈现过程中的边际成本
+
+-GitHub 是R中有效的项目管理系统[(Cetinkaya-Rundel & Rundel 2017)](Cetinkaya-Rundel & Rundel 2017.pdf).
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

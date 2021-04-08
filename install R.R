@@ -1,4 +1,5 @@
 ## install packages that will be used
+#make some changes
 pckgs <-c("lme4.0", "nlmeU", "plyr", "reshape", "RLRsim", "WWGbook","ellipse")
 pckgs =c('knitr',"tinytex","rticles",'bookdown','rmarkdown', 'xfun')
 pckgs =dir('library')  
